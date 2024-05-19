@@ -8,11 +8,13 @@ void Stack::push(int data)
 
 int Stack::pop()
 {
-    int p = LinkedList::remove(LinkedList::size_);
-    return p;
+    LinkedList::remove(LinkedList::size_);
+
+    return LinkedList::get(LinkedList::size_);
+    
 }
 
 int Stack::peek()
 {
-    LinkedList::get(LinkedList::size_);
+    return LinkedList::get(LinkedList::size_);
 }

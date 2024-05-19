@@ -9,10 +9,12 @@ void Queue::push(int data)
 
 int Queue::peek()
 {
-    LinkedList::get(0);
+    return LinkedList::get(0);
+
 }
 
 int Queue::pop()
 {
     LinkedList::remove(0);
+    return LinkedList::get(0);
 }
