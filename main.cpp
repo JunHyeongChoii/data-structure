@@ -4,9 +4,10 @@
 #include "stack.h"
 #include <iostream>
 
+
 // TODO: T 타입을 적절한 타입으로 변경
 
-template<class T>
+template<typename T>
 void print(T &list) { list.print(); }
 
 void testQueue() {

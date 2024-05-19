@@ -3,14 +3,15 @@
 // TODO: LinkedList 클래스 구현 작성
 
 LinkedList::LinkedList()
-    : size_(0), head_(nullptr)
+    : head_(nullptr),size_(0)
     {};
 
 void LinkedList::print()
 {
+    Node* current = head_;
     for(int i = 0; i<size_; i++)
     {
-        std::cout << head_->value_ << "-->";
+        std::cout << current->value_ << "-->";
         head_ = head_->next_;
     }
 
@@ -19,11 +20,12 @@ void LinkedList::print()
 
 int LinkedList::get(int index)
 {
+    Node* current = head_;
     for(int i  = 0; i<index; i++)
     {
-        head_ = head_->next_;
+        current = current->next_;
     }
-    return head_->value_;
+    return current->value_;
 }
 
 void LinkedList::insert(int index, int value)

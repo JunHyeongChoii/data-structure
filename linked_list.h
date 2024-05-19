@@ -2,7 +2,7 @@
 #define LINKED_LIST_H
 
 #include "node.h"
-
+#include <iostream>
 class LinkedList {
 public:
   LinkedList();

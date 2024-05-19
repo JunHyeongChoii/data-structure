@@ -15,6 +15,13 @@ int Queue::peek()
 
 int Queue::pop()
 {
+    int pop_value =LinkedList::get(0);
     LinkedList::remove(0);
-    return LinkedList::get(0);
+    return pop_value;
+}
+
+Queue& Queue::operator+=(int data)
+{
+    push(data);
+    return *this;
 }

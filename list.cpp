@@ -5,7 +5,7 @@
 
 int List::get(int index)
 {
-    LinkedList::get(index);
+    return LinkedList::get(index);
 }
 void List::insert(int index, int value)
 {
